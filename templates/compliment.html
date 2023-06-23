@@ -6,11 +6,12 @@
 <body>
     Hi {{ person }}! Would you like to play a game?
   <div>
-    <form>
-      <input type="radio" name="yes" id="yes">
+    <form action="/game">
+      <input type="radio" name="answer" id="yes" value="yes">
       <label for="yes">Yes</label>
-      <input type="radio" name="no" id="no">
+      <input type="radio" name="answer" id="no" value="no">
       <label for="no">No</label>
+      <input type="submit">
     </form>
   </div>
 
